@@ -91,7 +91,7 @@ const confirm = (event, id) => {
                     }}
                 </template>
             </Column>
-            <Column header="Actions">
+            <Column header="Ações">
                 <template #body="slotProps">
                     <div
                         class="card flex flex-wrap gap-2 justify-content-center"
