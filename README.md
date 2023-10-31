@@ -28,6 +28,6 @@ Crie um arquivo `.env` baseado no `.env.example`, e certifique-se que este está
 ```bash
 $ php artisan migrate
 $ php artisan key:generate
+$ npm run build 
 $ php artisan serve
-$ npm run dev
 ```
