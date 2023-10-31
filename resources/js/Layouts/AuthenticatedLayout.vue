@@ -166,6 +166,24 @@ const showingNavigationDropdown = ref(false);
                         >
                             Sorvetes
                         </ResponsiveNavLink>
+                        <ResponsiveNavLink
+                            :href="route('clientes.index')"
+                            :active="route().current('clientes.index')"
+                        >
+                            Clientes
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink
+                            :href="route('fornecedores.index')"
+                            :active="route().current('fornecedores.index')"
+                        >
+                            Fornecedores
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink
+                            :href="route('funcionarios.index')"
+                            :active="route().current('funcionarios.index')"
+                        >
+                            Funcionarios
+                        </ResponsiveNavLink>
                     </div>
 
                     <!-- Responsive Settings Options -->
