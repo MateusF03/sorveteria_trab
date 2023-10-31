@@ -4,6 +4,7 @@ use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\FornecedorController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SorveteController;
+use App\Http\Controllers\FuncionarioController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -28,6 +29,7 @@ Route::middleware('auth')->group(function () {
     Route::resource('sorvetes', SorveteController::class)->only(['index', 'store', 'edit', 'update', 'destroy']);
     Route::resource('clientes', ClienteController::class)->only(['index', 'store', 'edit', 'update', 'destroy']);
     Route::resource('fornecedores', FornecedorController::class)->only(['index', 'store', 'edit', 'update', 'destroy']);
+    Route::resource('funcionarios', FuncionarioController::class)->only(['index', 'store', 'edit', 'update', 'destroy']);
 });
 
 
