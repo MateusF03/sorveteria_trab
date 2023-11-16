@@ -9,10 +9,13 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 -   [Vue.JS](https://vuejs.org/): Um framework JavaScript progressivo para construir interfaces de usuário.
 -   [PrimeVue](https://primevue.org/): Uma biblioteca de componentes rica para Vue.js com mais de 70 componentes de código aberto.
 -   [Laravel](https://laravel.com/): Um framework PHP para desenvolvimento web, que é totalmente gratuito e de código aberto.
+-   [Composer](https://getcomposer.org/download/): Gerenciador de dependências do PHP.
 -   [NPM](https://www.npmjs.com/): Um gerenciador de pacotes para o ambiente de execução Node.js.
--   [Módulo de linguagem pt_BR (português brasileiro) para Laravel](https://github.com/lucascudo/laravel-pt-BR-localization): Traduções em PT-BR para o Laravel
+-   [Módulo de linguagem pt_BR (português brasileiro) para Laravel](https://github.com/lucascudo/laravel-pt-BR-localization): Traduções em PT-BR para o Laravel.
 
 ## Como rodar
+
+Uma versão do PHP será necessária, para Windows é recomendado baixar o XAMPP. No php.ini do XAMPP, geralmente localizado em `C:\xampp\php`, habilite as extensões php_curl, php_openssl e opcionalmente para instalar o projeto mais rápido a extensão de zip.
 
 Certifique o Composer e NPM estão instalado corretamente. Depois rode os sequintes comandos:
 
@@ -28,6 +31,6 @@ Crie um arquivo `.env` baseado no `.env.example`, e certifique-se que este está
 ```bash
 $ php artisan migrate
 $ php artisan key:generate
-$ npm run build 
+$ npm run build
 $ php artisan serve
 ```
